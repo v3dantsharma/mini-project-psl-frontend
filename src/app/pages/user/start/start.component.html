@@ -3,7 +3,16 @@
     <div class="row">
       <div class="col-md-2">
         <!-- instructions -->
-        <h3>instructions</h3>
+        <mat-card style="margin-top: 70px">
+          <mat-card-content>
+            <h3><b>Instructions</b></h3>
+            <ul>
+              <li>Don't refresh the page.</li>
+              <li>Don't switch the tab.</li>
+              <li>Don't close the window.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
       </div>
       <div class="col-md-8">
         <!-- questions -->
@@ -108,7 +117,7 @@
           <h1>Questions Attempted :{{ attempted }}</h1>
         </mat-card-content>
         <mat-card-actions class="text-center">
-          <button mat-raised-button color="primary">Print</button>
+          <button mat-raised-button color="primary" (click)="PrintPage()">Print</button>
           <button
             mat-raised-button
             color="accent"
